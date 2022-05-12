@@ -1,28 +1,26 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="max-w-xl mx-auto my-10 relative z-1">
+    <SearchForm class="mb-3"/>
+    <AlbumList />
+    <DarkModeButton />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchForm from '@/components/SearchForm'
+import AlbumList from '@/components/AlbumList'
+import DarkModeButton from '@/components/DarkModeButton'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SearchForm,
+    AlbumList,
+    DarkModeButton,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
